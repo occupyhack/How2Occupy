@@ -3,7 +3,7 @@ main url configuration file for the askbot site
 """
 from django.conf.urls.defaults import patterns, include, handler404, handler500, url
 from djangorestframework.views import ListOrCreateModelView, InstanceModelView
-from how2occupy.resources import MyModelResource
+from how2occupy.mobile_views import ExampleView, AnotherExampleView
 
 from django.conf import settings
 
@@ -17,8 +17,9 @@ urlpatterns = patterns('',
     (r'^settings/', include('askbot.deps.livesettings.urls')),
     (r'^followit/', include('followit.urls')),
     (r'^robots.txt$', include('robots.urls')),
-    url(r'^$', ListOrCreateModelView.as_view(resource=MyModelResource), name='mobile_resource'),
-    url(r'^(?P<pk>[0-9]+)/$', InstanceModelView.as_view(resource=MyModelResource)),
+    url(r'^$',                 ExampleView.as_view(), name='example-resource'),
+    url(r'^(?P<num>[0-9]+)/$', AnotherExampleView.as_view(), name='another-example'),
+
 )
 
 if 'rosetta' in settings.INSTALLED_APPS:
