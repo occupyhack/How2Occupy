@@ -1,5 +1,5 @@
 from djangorestframework.resources import ModelResource
-from modelresourceexample.models import MyModel
+from how2occupy.models import MyModel
 
 class MyModelResource(ModelResource):
     model = MyModel
