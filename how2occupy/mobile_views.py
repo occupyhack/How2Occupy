@@ -18,6 +18,8 @@ class ExampleView(View):
         """
         return {"Some other resources": [reverse('another-example', kwargs={'num':num}) for num in range(3)]}
 
+    def post(self, request):
+        return "THIS IS COOL"
 
 class AnotherExampleView(View):
     """
