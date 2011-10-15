@@ -18,7 +18,7 @@ urlpatterns = patterns('',
     (r'^followit/', include('followit.urls')),
     (r'^robots.txt$', include('robots.urls')),
     url(r'^api/$',                 ExampleView.as_view(), name='example-resource'),
-    url(r'^api/(?P<num>[0-9]+)/$', AnotherExampleView.as_view(), name='another-example'),
+    url(r'^(?P<num>[0-9]+)/$', AnotherExampleView.as_view(), name='another-example'),
 
 )
 
