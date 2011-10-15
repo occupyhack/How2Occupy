@@ -5,4 +5,4 @@ coverage==3.4
 djangorestframework==0.2.3
 askbot
 -e git+git://github.com/andryuha/python-markdown2.git#egg=markdown2
--e git+git://github.com/samuraisam/django-json-rpc.git
+-e git+git://github.com/samuraisam/django-json-rpc.git#egg=django-json-rpc
