@@ -17,7 +17,7 @@ urlpatterns = patterns('',
     (r'^settings/', include('askbot.deps.livesettings.urls')),
     (r'^followit/', include('followit.urls')),
     (r'^robots.txt$', include('robots.urls')),
-    url(r'^$',                 ExampleView.as_view(), name='mobile-source'),
+    url(r'api',                 ExampleView.as_view(), name='mobile-resource'),
     url(r'^(?P<num>[0-9]+)/$', AnotherExampleView.as_view(), name='another-example'),
 
 )
