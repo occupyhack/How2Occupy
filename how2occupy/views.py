@@ -1,4 +1,4 @@
-import jsonrpc
+import markdown2
 #from jsonrpc import jsonrpc_method
 
 #@jsonrpc_method('how2occupy.sayHello')
