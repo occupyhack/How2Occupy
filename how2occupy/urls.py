@@ -5,7 +5,8 @@ from django.conf.urls.defaults import patterns, include, handler404, handler500,
 from djangorestframework.resources import ModelResource
 from djangorestframework.views import ListOrCreateModelView, InstanceModelView
 from djangorestframework.views import ListOrCreateModelView, InstanceModelView
-from modelresourceexample.resources import MyModelResource
+from askbot.resources import MyModelResource
+
 from django.conf import settings
 
 from django.contrib import admin
