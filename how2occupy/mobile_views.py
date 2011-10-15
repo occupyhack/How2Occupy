@@ -4,7 +4,7 @@ from djangorestframework.views import View
 from djangorestframework.response import Response
 from djangorestframework import status
 
-from how2occupy.forms import MyForm
+from how2occupy.mobile_forms import MyForm
 
 
 class ExampleView(View):
