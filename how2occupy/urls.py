@@ -3,7 +3,7 @@ main url configuration file for the askbot site
 """
 from django.conf.urls.defaults import patterns, include, handler404, handler500, url
 from djangorestframework.views import ListOrCreateModelView, InstanceModelView
-from modelresourceexample.resources import MyModelResource
+from how2occupy.resources import MyModelResource
 
 from django.conf import settings
 
