@@ -2,7 +2,7 @@
 main url configuration file for the askbot site
 """
 from django.conf.urls.defaults import patterns, include, handler404, handler500, url
-#from jsonrpc import jsonrpc_site
+from jsonrpc import jsonrpc_site
 import how2occupy.views
 
 from django.conf import settings
@@ -17,7 +17,7 @@ urlpatterns = patterns('',
     (r'^settings/', include('askbot.deps.livesettings.urls')),
     (r'^followit/', include('followit.urls')),
     (r'^robots.txt$', include('robots.urls')),
-    #(r'^json/', jsonrpc_site.dispatch),
+    (r'^json/', jsonrpc_site.dispatch),
 )
 
 if 'rosetta' in settings.INSTALLED_APPS:
