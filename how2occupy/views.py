@@ -1,3 +1,4 @@
+import jsonrpc
 #from jsonrpc import jsonrpc_method
 
 #@jsonrpc_method('how2occupy.sayHello')
