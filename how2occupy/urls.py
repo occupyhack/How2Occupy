@@ -20,7 +20,7 @@ urlpatterns = patterns('',
     (r'^followit/', include('followit.urls')),
     (r'^robots.txt$', include('robots.urls')),
     url(r'^$', ListOrCreateModelView.as_view(resource=MyModelResource), name='mobile_resource'),
-    url(r'^(?P<pk>[0-9]+)/$', InstanceModelView.as_view(resource=MyModelResource)),
+    url(r'^api/$', InstanceModelView.as_view(resource=MyModelResource)),
 )
 
 if 'rosetta' in settings.INSTALLED_APPS:
