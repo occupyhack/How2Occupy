@@ -41,5 +41,5 @@ class AnotherExampleView(View):
         Returns a simple string indicating what content was supplied.
         """
         if int(num) > 2:
-            return Response(status.HTTP_404_NOT_FOUND)
+            return "FOOBAR"
         return "POST request to AnotherExampleResource %s, with content: %s" % (num, repr(self.CONTENT))
