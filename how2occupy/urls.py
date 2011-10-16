@@ -3,7 +3,7 @@ main url configuration file for the askbot site
 """
 from django.conf.urls.defaults import patterns, include, handler404, handler500, url
 from jsonrpc import jsonrpc_site
-import how2occupy.how2occupy.views
+import how2occupy.views
 
 from django.conf import settings
 
